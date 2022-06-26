@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--Meta tags used in the webpage-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact/Hula mobile phones</title>
+	<!--div for logo-->
+	<div id ="logo">
+        <img src="logos.png">
+	</div>
+	<!--heading-->
+    <h1 style="background-color:black; width: 100%; height: 78px;" >
+    <p style="text-align: center;"><b style="color:white; font-size:15px; margin-left:450px;">Cash on delivery</b><b style="color:white; font-size:15px; margin-left:70px;">100% Genuine</b><b style="color:white; font-size:15px; margin-left:70px; margin-right: -390px;">  Easy Returns</b></p>
+   </h1>
+    <p style="font-size: 80px; color:whitesmoke; margin-top: 100px; margin-left: 40px; font-family: Arial Black;"><b>CONTACT US</b></p>
+    <p style="font-size: 50px; color: floralwhite; margin-top: 50px; margin-left: 40px; font-family: Arial Rounded MT Bold;">Getting in touch is easy!</p><br><br>
+     <p style="font-size: 30px; color:wheat; margin-left: 40px; font-family: Arial Rounded MT Bold;">'Got an awesome idea!'<br>For a FREE proposal and analysis of your needs,<br>please shoot us an email at Hulamobiles@gmail.com.<br> We'll contact you shortly.</p>
+     <!--CSS-->
+     <!--link for external CSS-->
+	<link rel="stylesheet" href="contact.css">
+	<!--internal CSS-->
+   <style type="text/css">
+   	body {
+    background-image: url('bs.png');
+    background-repeat:no-repeat;
+    background-size: 1600px ;
+    }
+   	.form{
+    margin-left: 800px;
+    margin-top:-380px;
+    color:black;
+    font-size:20px;
+    align-items:center;
+    box-sizing:padding-box;
+   	}
+   	.form-container{
+    background-color:glitter; 
+    width:95%; 
+	height: 550px; 
+    border-radius:10px;
+	border:3px solid lightcyan;
+	box-shadow: 10px 10px 10px lightsteelblue;
+	}
+	.form-container:hover{
+	transform: scale(1.05);
+	transition: 1s;
+	background-color: wheat;
+	}
+    .box-container{
+    margin: 15px;
+	height: 35px;
+	width: 48%;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: darkcyan;
+	font-size: 15px;
+     }
+    .box-container:hover {
+    transform: scale(1.09);
+    transition: 1s;
+	background-color: black;
+	 }
+	#Submit
+	{  
+	margin-left:20px ;
+    background-color:wheat;
+	color: black;
+	height: 35px;
+	width: 19%;
+	border-radius: 10px;
+	font-size: 20px;
+	border: 1px solid  black;
+	}
+	#Submit:hover
+	{
+	transform: scale(1.09);
+	transition: 1s;
+	background-color: wheat;
+	}	
+	.footer{
+	 background-color:black; 
+     width:100%; 
+     height:70%;
+     bottom:-150px;
+	 padding:40px;
+	 }
+	.abouthula-container{
+	width:35%; 
+	height:100px; 
+	float:left; 
+	margin: 20px 0px 0px 150px;
+	}
+    .contact-container
+	{
+	width:25%; 
+	height:0px; 
+	float:right; 
+	margin: 20px 0px 0px 0px;
+	}
+	.socials-container
+    {  
+	font-family:Helvetica;
+	font-size:20px;
+	width: 5%; 
+	height: 150px; 
+	float: left; 
+	margin: 20px 0px 0px 20px; 
+	}
+	.socials-container-text{
+	font-family: Helvetica;
+	}
+	.socials-container-text:hover{
+	transform: scale(1.09);
+	transition: 0.8s
+	}	
+	.copyright-container{
+	 margin-top:250px;
+     font-size: 20px;
+     height:30px;
+     color: brown;
+     align-content:center;
+     }
+
+   </style>
+</head>
+<body>
+<!--navigation bar-->
+<ul>
+	  <li ><a href="home.html">Home</a></li>
+	  <li><a href="product.html">Product</a></li>
+	  <li ><a href="blog.html">Blog</a></li>
+	  <li ><a href="research.html">Research</a></li>
+	  <li ><a href="contact.html">Contact</a></li>
+</ul>
+<!--form Validation-->
+<div class="form">
+<div class="form-container">
+<form name="messageForm" onsubmit="validateForm() ">
+			<label style="font-family: Arial; margin-left:20px; "><b>Name: </b> </label>
+			<br>
+			<div class="box-container">
+			<textarea rows="3" cols="50" name="Name" placeholder="Name"></textarea>
+			</div>
+			<br>
+
+			<label style="font-family: Arial;margin-left:20px"><b>PhoneNumber:</b> </label>
+			<br>
+			<div class="box-container">
+			<textarea rows="3" cols="50" name="PhoneNumber" placeholder="PhoneNumber"></textarea>
+			</div>
+			<br>	
+
+			<label style="font-family: Arial;margin-left:20px"><b>Email:</b> </label>
+			<br>
+			<div class="box-container">
+			<textarea rows="3" cols="50" name="Email" placeholder="Email"></textarea>
+			</div>
+			<br>
+		
+			<label style="font-family: Arial;margin-left:20px;"><b> Message: </b></label>
+			<br>
+			<div class="box-container">
+			<textarea rows="6" cols="50" name="message" placeholder="Enter your message"></textarea>
+	        </div>
+	        <br>
+			<br>
+			<br>
+		  <input type="submit" value="Submit" id="Submit">
+		</form>
+</div>
+</div>  <!--using javascript-->
+		<script type="text/javascript">
+			function validateForm()
+			{
+				var Name = document.forms["messageForm"]["Name"].value;
+				var PhoneNumber = document.forms["messageForm"]["PhoneNumber"].value;
+				var Email = document.forms["messageForm"]["Email"].value;
+				var message = document.forms["messageForm"]["message"].value;
+
+				//alert(messageDetails);
+				if (Name == "" || PhoneNumber == "" || message == "" )
+				{
+					alert("There are empty feilds.Please,fill the form.");
+				}
+				else
+				{
+					alert("Thank you for your feedback!");
+				}
+			}
+		</script>
+</div>		
+</body>
+<!--footer-->
+<footer style="width:100%; height:300px; padding-top:10px;">
+<div class="footer">
+<div  class="socials-container">
+ 	<div>
+ 	<a href="https://www.facebook.com/profile.php?id=100080979708230" style="text-decoration:none;">
+ 	<p style="color: white;">Facebook</p></a>
+   </div><br>
+   <div>
+ 	<a href="https://www.instagram.com" style="text-decoration:none;">
+ 	<p style="color: white;" >Instagram</p></a>
+   </div><br>
+   <div>
+ 	<a href="https://twitter.com" style="text-decoration:none;">
+ 	<p style="color:white;">Twitter</p></a>
+   </div>
+</div>
+<div class="abouthula-container">
+    <span style="font-size:30px; color:lightcoral;">About Hula</span><br><br>
+        <p style="color:white; font-size:20px;">-"Hula" is a flourishing company established in 2016 by all the young enthusiasts aiming to give contributions to the tech-world.This company started off as a small project and now is one of the best e-commerce mobile selling website in Nepal. </p>
+</div>
+<div class="contact-container">
+	<span style= "font-size:30px;color:lightcoral;">Contact Us</span><br><br>
+	<p style="color:white; font-size:20px">
+	 Telephone No: 01-4483567<br>
+	 +977-9863480461<br>
+	 Mail:Hulamobiles@gmail.com
+</div>
+<div class="copyright-container">
+	<p style="text-align: center;">Copyright © 2016 Hula mobile phones</p>
+</div>
+</div>
+
+</footer>
+
+
+
+</html>
